@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" type="text/css" href="tally.css" media="screen" /-->
+    <title>TALLY COUNTER</title>
+    <style>
+        body {
+            background-color: #D74D30;
+        }
+        
+        a {
+            font-family: "Century Gothic";
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: "Century Gothic";
+        }
+        
+        h3 {
+            color: white;
+            text-align: center;
+            font-family: "Century Gothic";
+        }
+        
+        h4 {
+            color: white;
+            text-align: center;
+            font-family: "Century Gothic";
+        }
+        
+        .container {
+            border: 5px solid #000;
+            border-radius: 10px;
+            width: 500px;
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            background-color: #1D7A6A;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            font-family: "Century Gothic";
+        }
+        
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+            font-family: "Century Gothic";
+        }
+        
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #008CBA;
+            font-family: "Century Gothic";
+        }
+        
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+            font-family: "Century Gothic";
+        }
+        
+        #counter {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 36px;
+            font-family: "Century Gothic";
+        }
+    </style>
+</head>
+
+<body class="jumbotron">
+    <h1 class="text-center">PROBABLY LIMITLESS</h1>
+    <h1 class="text-center"> TALLY COUNTER</h1>
+    <h3 class="text-center">I MADE IT FOR YOU</h3>
+    <h4 class="text-center">YEAH YOU S T E L</h4>
+    <center>
+        <a href="https://inwepo.co/cara-membuat-aplikasi-counter-dengan-javascript/">This is the base</a>
+        <br>
+        <br>
+        <div class="container">
+            <div id="counter">0</div>
+            <br>
+            <button class="button button1" onclick="add()">Clicc</button>
+            <br>
+            <button class="button button2" onclick="reset()">Reset</button>
+            <h3>Lumbun</h3>
+        </div>
+
+    </center>
+    <script>
+        var count = 0;
+
+        function add() {
+            count += 1;
+            document.getElementById('counter').innerHTML = count;
+        }
+
+        function reset() {
+            count -= count;
+            document.getElementById('counter').innerHTML = count;
+        }
+    </script>
+</body>
+
+</html>
